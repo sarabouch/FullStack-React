@@ -1,56 +1,54 @@
-.hero{
+.hero {
+  position: relative;
+  margin-right: 150px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #6c63ff;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-content {
+    z-index: 2;
     position: relative;
-    margin-right: 150px;
-    margin-top:20px;
-    margin-left:20px;
-    background:#6c63ff;
-    height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    
-    &-content{
-        z-index: 2;
-        position: relative;
-
-        h1{
-            font-family: "EB Garamond";
-            color:#fff;
-            max-width: 12em;
-            margin-bottom: 32px;
-
-        }
-        button{
-            background: transparent;
-            border: 7px solid #fff;
-            border-radius: 0;
-            width: 240px;
-            box-shadow: 4px 4px 0 #fff;
-
-            &:hover{
-                background: #fff;
-                border-color: #fff;
-                font-weight: bold;
-                color: #6c63ff;
-                box-shadow: 0px 0px 0 #fff;
-
-            }
-        }
+    h1 {
+      font-family: "EB Garamond";
+      color: #fff;
+      max-width: 12em;
+      margin-bottom: 32px;
     }
+    button {
+      background: transparent;
+      border: 7px solid #fff;
+      border-radius: 0;
+      width: 240px;
+      box-shadow: 4px 4px 0 #fff;
 
-    &-img{
-        z-index: 1;
-        position: absolute;
-        // this mix-blend works as an instagram filter
-        mix-blend-mode: multiply;
+      &:hover {
+        background: #fff;
+        border-color: #fff;
+        font-weight: bold;
+        color: #6c63ff;
+        box-shadow: 0px 0px 0 #fff;
+      }
+    }
+  }
 
-        img{
-            width: 100%;
-        }
+  &-img {
+    z-index: 1;
+    position: absolute;
+    // this mix-blend works as an instagram filter
+    mix-blend-mode: multiply;
+
+    img {
+      width: 100%;
     }
-    .logo-img{
-        width: 100px;
-        margin-bottom: 32px;
-    }
+  }
+  .logo-img {
+    width: 100px;
+    margin-bottom: 32px;
+  }
 }

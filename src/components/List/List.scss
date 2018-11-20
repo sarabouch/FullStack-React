@@ -1,31 +1,72 @@
-.episodecontainer{
-    display:flex;
+.episodecontainer {
+  display: flex;
+  margin: 10% 0;
 }
-.episode{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-left:50px;
-
-    button{
-        width: 60%;
-        color: #081340;
-        font-size: 0.8em;
-        font-weight: 900;
-        border: 2px #081340 solid;
-        border-radius: 0;
-        padding:10px;
-        background:#fff;
-    }
+.episode-img {
+  width: 130px;
+  height: 130px;
 }
-.guest{
-    display:flex;
-    justify-content: space-around;
-    width:100%;
+.episode {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-left: 50px;
 
-    img{
-        width:30px;
-        height:30px;
+  h5 {
+    font-size: 0.7rem;
+    color: #6e6e6e;
+    letter-spacing: 0.4rem;
+  }
+
+  p {
+    max-width: 100%;
+    text-align: left;
+    font-family: "EB Garamond";
+    font-weight: 600;
+  }
+
+  button {
+    width: 60%;
+    color: #081340;
+    font-size: 0.8em;
+    font-weight: 900;
+    border: 2px #081340 solid;
+    border-radius: 0;
+    padding: 10px;
+    background: #fff;
+
+    &:hover {
+      color: #fff;
+      background-color: #081340;
     }
+  }
+
+  a {
+    color: #0e0d0d;
+    font-size: 0.8rem;
+  }
+}
+.guest {
+  display: flex;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  span {
+    color: #6e6e6e;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin-left: 30px;
+
+    a {
+      font-size: 1rem;
+    }
+  }
 }
